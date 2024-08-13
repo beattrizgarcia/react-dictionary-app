@@ -1,4 +1,5 @@
 import React from "react";
+import Synonyms from "./Synonyms";
 import "./Results.css";
 
 export default function Results(props) {
@@ -23,7 +24,9 @@ export default function Results(props) {
                 {el.synonyms && (
                   <div>
                     <strong>Synonyms:</strong>
-                    <p>{el.synonyms}</p>
+                    <p>
+                      <Synonyms synonyms={el.synonyms} />
+                    </p>
                   </div>
                 )}
               </div>
