@@ -2,12 +2,16 @@ body {
   background: #40916c;
 }
 
-
-
 .App header {
-  margin: 70px 0;
-  color: #1b4332;
+  margin: 70px 0 0 0;
+  padding-bottom: 10px;
+
   text-align: center;
+}
+
+.App h1 {
+  font-size: 64px;
+  color: #1b4332;
 }
 
 .App footer {

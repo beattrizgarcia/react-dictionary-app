@@ -17,3 +17,13 @@ h2 {
 h4 {
   opacity: 77%;
 }
+
+h3 {
+  font-size: 30px;
+}
+
+.example {
+  color: #081c15;
+  font-style: italic;
+  font-size: 20px;
+}

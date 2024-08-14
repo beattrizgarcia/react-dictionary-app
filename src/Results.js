@@ -17,19 +17,19 @@ export default function Results(props) {
               <div>
                 <h3> {el.partOfSpeech}</h3>
 
-                <strong>Definition:</strong>
-                <p> {el.definition} </p>
+                
+                <p className="definition"> {el.definition} </p>
 
                 {el.example && (
                   <div>
-                    <strong>Example:</strong>
-                    <p>{el.example}</p>
+                  
+                    <p className="example">{el.example}</p>
                   </div>
                 )}
 
                 {el.synonyms && (
                   <div>
-                    <strong>Synonyms:</strong>
+                    
                     <p>
                       <Synonyms synonyms={el.synonyms} />
                     </p>
