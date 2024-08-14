@@ -1,4 +1,19 @@
 .Results {
- 
   color: black;
+}
+
+.Results section {
+  background: rgba(82, 183, 136, 0.3);
+  padding: 30px;
+  border-radius: 6px;
+  box-shadow: 0 10px 10px rgb(0 0 0 / 10%);
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h4 {
+  opacity: 77%;
 }

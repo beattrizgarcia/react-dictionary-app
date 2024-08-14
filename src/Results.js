@@ -6,15 +6,20 @@ export default function Results(props) {
   if (props.results) {
     return (
       <div className="Results">
-        <div>
+        <section>
           <h2>{props.results.word}</h2>
+
           <h4>{props.results.phonetic}</h4>
+        </section>
+        <section>
           {props.results.meanings &&
             props.results.meanings.map((el) => (
               <div>
                 <h3> {el.partOfSpeech}</h3>
+
                 <strong>Definition:</strong>
                 <p> {el.definition} </p>
+
                 {el.example && (
                   <div>
                     <strong>Example:</strong>
@@ -32,7 +37,7 @@ export default function Results(props) {
                 )}
               </div>
             ))}
-        </div>
+        </section>
       </div>
     );
   } else {
