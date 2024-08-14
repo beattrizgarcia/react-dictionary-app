@@ -8,6 +8,7 @@ export default function Results(props) {
       <div className="Results">
         <div>
           <h2>{props.results.word}</h2>
+          <h4>{props.results.phonetic}</h4>
           {props.results.meanings &&
             props.results.meanings.map((el) => (
               <div>
