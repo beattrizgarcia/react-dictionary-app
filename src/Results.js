@@ -11,33 +11,30 @@ export default function Results(props) {
 
           <h4>{props.results.phonetic}</h4>
         </section>
-        <section>
-          {props.results.meanings &&
-            props.results.meanings.map((el) => (
+        {props.results.meanings &&
+          props.results.meanings.map((el) => (
+            <section>
               <div>
                 <h3> {el.partOfSpeech}</h3>
 
-                
                 <p className="definition"> {el.definition} </p>
 
                 {el.example && (
                   <div>
-                  
                     <p className="example">{el.example}</p>
                   </div>
                 )}
 
                 {el.synonyms && (
                   <div>
-                    
                     <p>
                       <Synonyms synonyms={el.synonyms} />
                     </p>
                   </div>
                 )}
               </div>
-            ))}
-        </section>
+            </section>
+          ))}
       </div>
     );
   } else {
